@@ -1,39 +1,40 @@
-# CLI_Password
-##### Generate a password
+# CLI Password
+Gerar senha com script python usando a biblioteca click.
 
-###### Requerimentos:
+## Requerimentos
 Este projeto faz uso de um módulo do python chamado click.
 ```bash
 # Instalação
-pip install click
+pip install -r .\requirements.txt
 ```
+ou usar Makefile Tools do VsCode.
 
-###### Como utilizar: 
+## Como utilizar
 
 ```bash
 # Clone este repositório
-git clone <https://github.com/KOOLDE/CLI_Password.git>
+git clone https://github.com/doniztjnr/cli-password.git
 
 # Acesse a pasta do projeto onde contem o arquivo password.py
-cd CLI_Password
+cd .\cli-password\sample\
 
 # Rodar o script via prompt de comando
-python password.py 
+python .\password.py
 ```
 
-###### Opções:
+## Opções
 Por padrão é gerado uma senha de 8 dígitos, porém você pode especificar a quantidade de dígitos que desejar.
 ```bash
 # Em <number> você pode colocar qualquer número
-python password.py --length <number>
+python .\password.py --length <number>
 
 # Exemplo 
-python password.py --length 12
+python .\password.py --length 12
 ```
 
-###### Ajuda:
+## Ajuda
 Para saber como usar o script digite o comando.
 ```bash
-# Como utilizar a CLI
-python password.py --help
+# Como utilizar a cli
+python .\password.py --help
 ```
